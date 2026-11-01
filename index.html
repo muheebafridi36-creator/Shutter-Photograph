@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHUTTER-PHOTOGRAPH</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+      
+      <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            /* background-color: black; */
+        }
+        .container{
+            width: 100%;
+            position: relative;
+            display: flex;
+        }
+        .left{
+            width: 80%;
+            background-color: black;
+        }
+        .row1{
+            width: 100%;
+            display: flex;
+            height: 300px;
+            /* border: solid black; */
+            gap: 15px;
+        }
+        .img1{
+            flex-grow:1;  
+            objewct-fit: cover;
+        }
+         .img2{
+          
+            objewct-fit: cover;
+        }
+         .row2{
+            width: 100%;
+            display: flex;
+            height: 300px;
+            /* border: solid black; */
+            gap: 15px;
+            margin-top: 20px;
+         }
+         .img3{
+            width: 25%;
+                object-fit: cover;
+         }
+         .img4{
+            width: 50%;
+                object-fit: cover;
+         }
+         .img5{
+            width: 28%;
+            object-fit: cover;
+         }
+          .row3{
+            width: 100%;
+            display: flex;
+            height: 300px;
+            /* border: solid black; */
+            gap: 15px;
+            margin-top: 20px;
+         }
+         .img6{
+            flex-grow: 2;
+             object-fit: cover;
+         }
+         .img7{
+            flex-grow: 1;
+             object-fit: cover;
+         }
+          .row4{
+            width: 100%;
+            display: flex;
+            height: 300px;
+            /* border: solid black; */
+            gap: 15px;
+            margin-top: 20px;
+          }
+            .img8{
+            width: 33.33%;
+                object-fit: cover;
+         }
+           .img9{
+            width: 33.33%;
+                object-fit: cover;
+         }
+           .img10{
+            width: 33.33%;
+                object-fit: cover;
+         }
+         .row5{
+            width: 100%;
+            display: flex;
+            height: 300px;
+            /* border: solid black; */
+            gap: 15px;
+            margin-top: 20px;
+          }
+           .img11{
+            width: 25%;
+                object-fit: cover;
+         }
+         .img12{
+            width: 50%;
+                object-fit: cover;
+         }
+         .img13{
+            width: 28%;
+            object-fit: cover;
+        }
+         .row6{
+            width: 100%;
+            display: flex;
+            height: 300px;
+            /* border: solid black; */
+            gap: 15px;
+            margin-top: 20px;
+          }
+            .img14{
+            flex-grow:1;  
+            objewct-fit: cover;
+        }
+         .img15{
+          
+            objewct-fit: cover;
+        }
+        .row7{
+            width: 100%;
+            display: flex;
+            height: 300px;
+            /* border: solid black; */
+            gap: 15px;
+            margin-top: 20px;
+         }
+          .img16{
+            flex-grow: 2;
+             object-fit: cover;
+         }
+         .img17{
+            flex-grow: 1;
+             object-fit: cover;
+         }
+          .row8{
+            width: 100%;
+            display: flex;
+            height: 300px;
+            /* border: solid black; */
+            gap: 15px;
+            margin-top: 20px;
+         }
+         .img18{
+            width: 50%;
+            object-fit: cover;
+         }
+         .img19{
+            width: 50%;
+            object-fit: cover;
+         }
+         .footer{
+            color: white;
+            width: 100%;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 700;
+         }
+         .right{
+            width: 20%;
+            height: 100vh;
+            background-color: black;
+            position: fixed;
+            right: 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: right;
+            align-items: end;
+         }
+         .h3{
+            width: 100%;
+            /* border: solid white; */
+            display: flex;
+            justify-content: center;
+            /* padding-right: 30px; */
+            margin-top: 40px;
+         }
+         h3{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 700;
+         }
+         .links{
+              width: 100%;
+            /* border: solid white; */
+            display: flex;
+            justify-content: center;
+            padding-right: 30px;
+            margin-top: 40px;
+            height: 150px;
+         }
+         .links>ul{
+            display: flex;
+            flex-direction: column;
+            gap: 13px;
+            list-style: none;
+         }
+         li>a{
+            text-decoration: none;
+            color: white;
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: small;
+         }
+         .icn{
+            /* border: white solid; */
+            width: 100%;
+            /* font-size: 10px; */
+            height: 100px;
+         }
+         /* .icn>i{
+            color: white;
+            font-size: medium;
+            display: flex;
+            flex-direction: row;
+
+         } */
+          .icn>ul{
+            display: flex;
+            justify-content: end;
+            padding-right: 30px;
+            gap: 15px;
+            margin-top: 35px;
+          }
+          .icn{
+            color: white;
+            list-style: none;
+            font-size: 18px;
+          }
+          .ic{
+            list-style: none;
+          }
+
+
+      </style>
+<body>
+    
+    <div class="container">
+        <div class="left">
+
+       
+       
+        <div class="row1">
+            <img class="img1"  src="./images/img_4.avif" alt="">
+              <img class="img2" src="./images/img_5.avif" alt="">
+        </div>
+
+        <div class="row2">
+            <img class="img3" src="./images/img_1.avif" alt="">
+              <img class="img4" src="./images/img_2.avif" alt="">
+              <img class="img5" src="./images/img_3.avif" alt="">
+        </div>
+
+        <div class="row3">
+            <img class="img6" src="./images/img_6.avif" alt="">
+              <img class="img7" src="./images/img_7.avif" alt="">
+        </div>
+
+        <div class="row4">
+            <img class="img8" src="./images/img_8.avif" alt="">
+              <img class="img9" src="./images/img_9.avif" alt="">
+              <img class="img10" src="./images/img_10.avif" alt="">
+        </div>
+
+        <div class="row5">
+            <img class="img11" src="./images/img_1.avif" alt="">
+              <img class="img12" src="./images/img_2.avif" alt="">
+              <img class="img13" src="./images/img_3.avif" alt="">
+        </div>
+
+        <div class="row6">
+            <img class="img14" src="./images/img_4.avif" alt="">
+              <img class="img15" src="./images/img_5.avif" alt="">
+        </div>
+
+          <div class="row7">
+            <img class="img16" src="./images/img_6.avif" alt="">
+              <img class="img17" src="./images/img_7.avif" alt="">
+        </div>
+
+          <div class="row8">
+            <img class="img18" src="./images/img_8.avif" alt="">
+              <img class="img19" src="./images/img_9.avif" alt="">
+        </div> 
+
+        <div class="footer">
+            <p> Copyright ©2026 All rights reserved | This template is made with  by Colorlib</p>
+        </div>
+
+         </div>
+
+        <div class="right">
+            <div class="h3">
+                  <h3>  SHUTTER</h3>
+            </div>
+          
+            <div class="links">
+            <ul>
+                <li><a href="#"> HOME</a> </li>
+                 <li><a href="#"> PHOTOS</a> </li>
+                  <li><a href="#"> BIO</a> </li>
+                 <li><a href="#"> BLOG</a> </li>
+                  <li><a href="#"> CONTACT</a> </li>
+            </ul>
+            </div>
+           
+            <div class="icn">
+                <ul>
+                    <li class="ic"><i class="fa-brands fa-facebook-f"></i></li>
+                    <li class="ic"><i class="fa-brands fa-twitter"></i></li>
+                    <li class="ic"> <i class="fa-brands fa-square-instagram"></i></li>
+                    <li class="ic"><i class="fa-brands fa-linkedin"></i></li>
+                    <li class="ic"> <i class="fa-brands fa-facebook-messenger"></i></li>
+                </ul>
+                
+                
+               
+                
+               
+
+            </div>
+
+            
+        </div>
+
+
+
+    </div>
+</body>
+</html>
